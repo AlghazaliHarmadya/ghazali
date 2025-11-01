@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WhatsApp Bug</title>
+    <script>
+        function sendWhatsAppMessage() {
+            var phoneNumber ="+6281234567890"; // Ganti dengan nomor WhatsApp korban
+            var message ="Ini adalah pesan bug WhatsApp."; // Ganti dengan pesan yang ingin dikirim
+            var url ="https://api.whatsapp.com/send?phone="+ phoneNumber + "&text=" +encodeURIComponent(message);            window.location.href = url;}
